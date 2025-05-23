@@ -1,35 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Home</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rey Arby Castro - Web Developer Intern</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
-    <div class="home-container">
-        <div class="header-container">
-            <div class="header">
-                <h1>Rey Arby Castro<span>.</span></h1>
-                <p>Aspiring <span>Software Engineer</span></p>
+<body class="dark-mode">
+    <main class="main_container">
+        <section class="profile">
+            <div class="profile-image">
+                <img src="./public/my_pic.PNG" alt="Profile Picture">
             </div>
-        </div>
-        <div class="navigation-container">
-            <nav>
-                <a href="#" class="active"> <span>>HOME</span></a>
-                <a href="about.html">>ABOUT</a>
-                <a href="projects.html">>PROJECTS</a>
-                <a href="contacts.html">>CONTACTS</a>
-            </nav>
-        </div>
-        <div class="pic-container">
-            <div class="my-picture">
-                <img src="https://res.cloudinary.com/dlfmwbgst/image/upload/v1724591130/my-pic.png" alt="my pic">
+            <div class="profile-info">
+                <h1>Rey Arby Castro</h1>
+                <p class="title">Web Developer Intern</p>
+                <p class="location"><i class="fas fa-map-marker-alt"></i> Pandi, Bulacan, Philippines</p>
+                
+                <div class="social-links">
+                    <a href="mailto:castro.reyarby@gmail.com" class="social-link" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://github.com/reyqueuetie" class="social-link" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/rey-arby-castro-4838b7354/" class="social-link" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="social-link" title="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/_reycstr/" class="social-link" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-link" title="Telegram">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                </div>
             </div>
-        </div>
-    </div>
+            <div class="theme-switch">
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </section>
+
+        <section class="about card">
+            <h2><i class="fas fa-user"></i> Profile</h2>
+            <p>Driven by a strong interest in web development, I am an aspiring web developer intern focused on building engaging and practical digital solutions. With an eagerness to learn new technologies and expand my skills, I am ready to contribute meaningfully to innovative development environments.</p>
+        </section>
+
+        <section class="recent-projects card">
+            <h2><i class="fas fa-project-diagram"></i> Projects</h2>
+            <div class="projects-grid">
+                <div class="project">
+                    <h3>INFINITY - E-Commerce Shoe Store</h3>
+                    <ul>
+                        <li>Developed using PHP for backend functionality</li>
+                        <li>Built frontend with HTML and CSS, MySQL for data management</li>
+                        <li>Includes product store, user auth, shopping cart, checkout system</li>
+                        <li>Implemented secure admin authentication</li>
+                        <li>Designed UI/UX in Figma</li>
+                    </ul>
+                </div>
+                <div class="project">
+                    <h3>Communique - Social Media Platform</h3>
+                    <ul>
+                        <li>Full-featured platform with REST API backend and SPA frontend</li>
+                        <li>Built with JavaScript, HTML, and CSS</li>
+                        <li>Implemented user auth, posts, comments, and real-time updates</li>
+                    </ul>
+                </div>
+                <div class="project">
+                    <h3>Takarakuji - Minute-lotto App</h3>
+                    <ul>
+                        <li>Developed backend with JavaScript (ES6+)</li>
+                        <li>Built SPA frontend with ReactJS and Tailwind CSS</li>
+                        <li>Implemented WebSockets for real-time updates</li>
+                        <li>Designed UI/UX in Figma</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="education card">
+            <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+            <div class="education-item">
+                <h3>B.S. Computer Science</h3>
+                <p>College of Mary Immaculate</p>
+                <span class="year">2020 - Present</span>
+                <p class="location"><i class="fas fa-map-marker-alt"></i> Poblacion, Pandi Bulacan</p>
+            </div>
+        </section>
+
+        <section class="tech-stack card">
+            <h2><i class="fas fa-code"></i> Skills</h2>
+            <div class="stack-container">
+                <div class="stack-group">
+                    <h3>Programming</h3>
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">PHP</span>
+                    </div>
+                </div>
+                <div class="stack-group">
+                    <h3>Web Development</h3>
+                    <div class="tags">
+                        <span class="tag">HTML/CSS</span>
+                        <span class="tag">React</span>
+                        <span class="tag">REST APIs</span>
+                    </div>
+                </div>
+                <div class="stack-group">
+                    <h3>Tools</h3>
+                    <div class="tags">
+                        <span class="tag">MySQL</span>
+                        <span class="tag">Git</span>
+                        <span class="tag">Figma</span>
+                        <span class="tag">Virtual Machines</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reference card">
+            <h2><i class="fas fa-comment"></i> Reference</h2>
+            <div class="reference-item">
+                <h3>Joseph Bernard Reyes</h3>
+                <p>College of Mary Immaculate</p>
+                <p><i class="fas fa-phone"></i> +639922346806</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2025 Rey Arby Castro. All rights reserved.</p>
+            <div class="chat-bubble">
+                <button class="chat-btn">
+                    <i class="fas fa-comment"></i> Chat with Rey
+                </button>
+            </div>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
