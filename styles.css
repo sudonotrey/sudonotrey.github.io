@@ -409,7 +409,7 @@ input:checked + .slider:before {
 footer {
     grid-column: span 12;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin-top: var(--spacing-xl);
     padding: var(--spacing-lg) 0;
