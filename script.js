@@ -42,7 +42,7 @@ cards.forEach(card => {
 });
 
 chatButton.addEventListener('click', () => {
-    alert("Chat functionality would open here!");
+    window.location.href = 'mailto:castro.reyarby@gmail.com';
 });
 
 const projects = document.querySelectorAll('.project');
